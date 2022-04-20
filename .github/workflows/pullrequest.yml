@@ -21,7 +21,7 @@ jobs:
       - name: Raise PR
         uses: peter-evans/create-pull-request@v3
         with:
-          branch: "auto-pr-branch"
+          branch: PR
           base: PR
           title: "demo for auto pr"
           committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
@@ -29,4 +29,5 @@ jobs:
           body:
             This is to show automatic PR creation
           token: ${{ secrets.TOKEN }}
+          reviewers: Srija-Papinwar
           delete-branch: true
