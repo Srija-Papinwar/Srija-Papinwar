@@ -14,6 +14,5 @@ jobs:
         with:
           token: ${{ secrets.TOKEN }}
           commit-message: Update report
-          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           assignees: Srija-Papinwar
           reviewers: Srija-Papinwar
