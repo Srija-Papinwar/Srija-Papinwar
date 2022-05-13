@@ -1,4 +1,4 @@
-# 6.7.0(unreleased)
+# 6.7.0
 #### Notes
 Extends support of the SDK to OneView REST API version 3400 (OneView v6.7)
 
@@ -32,7 +32,6 @@ Extends support of the SDK to OneView REST API version 3400 (OneView v6.7)
 - Tasks 
 - Uplink Sets 
 - Volumes 
-
 # 6.6.0
 #### Notes
 Extends support of the SDK to OneView REST API version 3800 (OneView v6.60)
