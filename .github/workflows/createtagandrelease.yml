@@ -15,7 +15,7 @@ jobs:
         env:
           GITHUB_TOKEN:  ${{ secrets.GITHUB_TOKEN }}
           WITH_V: true
-          CUSTOM_TAG: "v7.9.0"
+          CUSTOM_TAG: "v7.10.0"
       - name: Display
         run: echo ${{ steps.tag_and_prepare_release.outputs.new_tag }}
       - uses: ncipollo/release-action@v1
@@ -23,5 +23,5 @@ jobs:
           name:  ${{ steps.tag_and_prepare_release.outputs.new_tag }}
           tag: ${{ steps.tag_and_prepare_release.outputs.new_tag }}
           body: See the <a href="https://github.com/Srija-Papinwar/Srija-Papinwar/blob/master/CHANGELOG.md">CHANGELOG.md</a> for details.
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           
